@@ -1,0 +1,498 @@
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+h1, h2, h3, h5, a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+p, li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------------------------*\
+  #CONTAINER-FLUID HEADER-PROMO
+\*------------------------------------*/
+
+header .navbar{
+    padding: 2.88rem;
+}
+
+header .navbar :last-child{
+    vertical-align: middle;
+}
+
+header .fa-magnifying-glass{
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+header .navbar h3{
+    margin: 0rem;
+}
+
+header .nav-link{
+    --bs-nav-link-color: black;
+}
+
+header .navbar .active{
+    text-decoration: underline;
+}
+
+header .navbar span{
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+header .navbar h3{
+    font-weight: 700;
+}
+
+header .navbar a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.header-promo{
+    background: url(../img/cover.png) rgb(255, 255, 255) no-repeat;
+    background-size: cover;
+}
+
+/*------------------------------------*\
+  #PROMO NEW EPISODE AVAILABLE NOW
+\*------------------------------------*/
+
+.promo{
+    padding-top: 6.25rem;
+    padding-bottom: 20.25rem;
+}
+
+.promo h1{
+    font-size: 5.9375rem;
+    font-weight: 700;
+}
+
+.promo >p{
+    padding-top: 0.87rem;
+    padding-bottom: 3.12rem;
+    font-size: 1.1875rem;
+    font-weight: 400; 
+}
+
+.promo-buttons .btn{
+    border-radius: 50px;
+    width: 11.5rem;
+    height: 3.37rem;
+    margin-right: 1.44rem;
+}
+
+.promo-buttons .btn p{
+    margin: 0px;
+    padding-left: 7px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.promo-buttons p span{
+    font-size: x-small;
+    font-weight: 400;
+}
+
+.promo-buttons a>*{
+    display: inline-block;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+/*------------------------------------*\
+  #VIDEO
+\*------------------------------------*/
+
+.video{
+    padding: 8.75rem 0rem 6.56rem 0rem;
+}
+
+.video .card{
+    border: none;
+}
+
+.video .card img{
+    border-radius: 0rem;
+    line-height: 4.375rem;;
+}
+
+.video .card-img-overlay{
+    justify-content: center;
+    align-items: center;
+}
+
+.video a{
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 2.8125rem;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------*\
+  #MUSIC
+\*------------------------------------*/
+
+.music{
+    margin-top: -10rem;
+    margin-bottom: 8.75rem;
+}
+
+.music-card-bottom p{
+    margin: 0rem 0rem;
+}
+
+.music .card-title{
+    padding-bottom: 0.63rem;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*------------------------------------*\
+  #DESIGN INSPIRATION
+\*------------------------------------*/
+
+.design .card{
+    border: none;
+    padding-bottom: 8.75rem;
+}
+
+.design-text{
+    font-size: 1.0625rem;
+}
+
+.design .card-body{
+    padding-top: 0rem;
+    padding-left: 0rem;
+}
+
+.design .card-body__episode{
+    align-items: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.81rem;
+}
+
+.design .card-body__episode p{
+    margin: 0rem;
+    padding-left: 1.31rem;
+}
+
+.card-body__episode p{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.design .card-body__episode a, .music-card-bottom .btn{
+    border-radius: 4.375rem;
+    border: 2px solid #CECECE;
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+.design .card-img-overlay h5{
+    font-size: 0rem;
+}
+
+/*------------------------------------*\
+  #MAIN TOP-PODCAST
+\*------------------------------------*/
+
+main{
+    background: #F8F8F8;
+    padding-bottom: 6.69rem;
+}
+
+.main-top{
+    text-align: center;
+    padding-top: 5.75rem;
+    padding-bottom: 3.13rem;
+}
+
+.main-middle{
+    justify-content: space-around;
+}
+
+.main-middle .card, .music .card{
+    border: none;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 576px){
+    .main-middle .card{
+        padding: 0;
+    }
+    .music .card-body{
+        padding-right: 3.25rem;
+        padding-left: 2.38rem;
+    }
+}
+
+@media (max-width: 576px){
+    .main-middle .card{
+        margin: 0;
+    }
+    .promo-buttons .btn:first-child{
+        margin-bottom: 1rem;
+    }
+    .music-card-bottom{
+        gap: 1.5rem;
+    }
+    .promo h1{
+        font-size: 3rem;
+    }
+    header .navbar{
+        padding: 0.75rem;
+    }
+    header .fa-2xl{
+        font-size: 0rem;
+    }
+}
+
+@media (min-width: 1400px){
+    .episodes .card, .hosts .card{
+        width: 25.6rem;
+    }
+
+    .music-card-bottom :nth-child(5){
+        margin-right: -3rem;
+    }
+    
+    .music-card-bottom :nth-child(2), .music-card-bottom :nth-child(3){
+        margin-right: -2rem;
+    }
+    
+    .design-image{
+        text-align: right;
+        transform: rotate(-90deg);
+    }
+    
+    .design-image img{
+        transform: rotate(90deg);
+    }
+    
+    .design .card-img-overlay{
+        margin-top: -7rem;
+        text-align: justify;
+    }
+    
+    .design .card-img-overlay h5{
+        color: #f3f1f1;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+}
+
+main .card-img-overlay{
+    justify-content: end;
+}
+
+main .card-body{
+    align-items: center;
+}
+
+main .card .row :last-child, .music .card .row :last-child{
+    align-items: center;
+}
+
+/*------------------------------------*\
+  #EPISODES AND MAIN
+\*------------------------------------*/
+
+.episodes-top{
+    padding-top: 7.94rem;
+    padding-bottom: 3.63rem;
+}
+
+.episodes .card-img-overlay, main .card-img-overlay{
+    justify-content: end;
+}
+
+.episodes .card-img-overlay a, main .card-img-overlay a{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.episodes .card-img-overlay{
+    padding-right: 24px;
+}
+
+/*------------------------------------*\
+  #HOSTS AND EPISODES
+\*------------------------------------*/
+
+.hosts-bottom{
+    padding-top: 2.25rem;
+    padding-bottom: 8.76rem;
+}
+
+.episodes .card{
+    padding-bottom: 2.31rem;
+}
+
+.episodes .card-title, main .card-title{
+    border-bottom: 3px solid black;
+    margin-bottom: 1.3rem;
+}
+
+.episodes .card-title{
+    margin-right: 5.15rem;
+}
+
+main .card-title{
+    margin-right: 3.5rem;
+}
+
+.card-title{
+    font-size: 1.6875rem;
+    font-weight: 700;
+}
+
+.card-text{
+    color: #8E8B8C;
+    font-size: 0.875rem;
+}
+
+.hosts-top h2, .episodes-top h2, .music-card-top h2, .design h2, main h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.hosts-top a, .episodes-top a, .music-card-top a, .design-top a, .card a{
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.hosts-top, .episodes-top, .music-card-top{
+    align-items: center;
+}
+
+.hosts-top a, .episodes-top a, .music-card-top a{
+    text-align: right;
+}
+
+.hosts-bottom, .episodes-bottom{
+    justify-content: space-between;
+}
+
+.hosts-bottom .card, .episodes .card, .music .card{
+    border: none;
+}
+
+.hosts-bottom ul{
+    padding: 0rem;
+}
+
+.hosts-bottom li{
+    border-radius: 11px;
+    background: #8E8B8C;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 0.96rem;
+}
+
+.hosts-bottom svg{
+    vertical-align: baseline;
+}
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+footer.container-fluid{
+    background-color: black;
+    color: white;
+}
+
+footer .container{
+    padding-top: 8.38rem;
+    padding-bottom: 8.38rem;
+}
+
+.footer p{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.footer-top{
+    padding-bottom: 7.08rem;
+}
+
+footer ul{
+    padding: 0px 0px;
+}
+
+.footer-left span{
+    font-size: 1rem;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.footer-top h3, .footer-left h3{
+    font-size: 1.6875rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-bottom div:nth-child(-n + 2) :nth-child(n +2){
+    color: #CCC;
+}
+
+.footer-bottom h5{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #969696;
+}
+
+.footer-bottom p:last-child, .footer-left p{
+    font-size: 0.8125rem;
+}
+
+.footer-bottom p:last-child span, .footer-left p{
+    color: #969696;
+}
+
+.footer-bottom ul{
+    padding-top: 1.56rem;
+    padding-bottom: 5rem;
+    margin-bottom: 0rem;
+}
+
+.footer-bottom__contacts ul li, .footer-bottom__location ul li{
+    font-size: 1.0625rem;
+}
+
+.footer-bottom :last-child  ul li{
+    display: inline-block;
+    font-size: 1.3125rem;
+    padding-right: 1.25rem;
+}
+
+.footer-bottom >*{
+    flex-direction: column;
+    justify-content: space-between;
+}
